@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Maker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="color-box">
+      <div
+        class="color-option"
+        style="background-color: #f44336"
+        data-color="#F44336"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #ff9800"
+        data-color="#FF9800"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #ffeb3b"
+        data-color="#FFEB3B"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #4caf50"
+        data-color="#4CAF50"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #2196f3"
+        data-color="#2196F3"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #3f51b5"
+        data-color="#3F51B5"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #9c27b0"
+        data-color="#9C27B0"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #e91e63"
+        data-color="#E91E63"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #000"
+        data-color="#000"
+      ></div>
+      <input id="color" type="color" />
+    </div>
+    <canvas></canvas>
+    <div class="btns">
+      <button id="mode-btn">연필</button>
+      <button id="destroy-btn">전체 지우기</button>
+      <button id="eraser-btn">지우개</button>
+      <input
+        id="line-width"
+        type="range"
+        min="1"
+        max="10"
+        value="5"
+        step="0.5"
+      />
+
+      <input type="text" placeholder="입력 후 더블클릭 하세요." id="text" />
+      <label for="file">
+        이미지 불러오기
+        <input type="file" accept="image/*" id="file" />
+      </label>
+      <button id="save">저장하기</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
